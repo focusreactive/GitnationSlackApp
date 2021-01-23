@@ -1,0 +1,29 @@
+{
+  "name": "GitnationSlackApp",
+  "version": "1.0.0",
+  "description": "Gitnation live conferences deploy",
+  "main": "index.js",
+  "scripts": {
+    "prepare": "package-prepare"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/focusreactive/GitnationSlackApp.git"
+  },
+  "packagePrepare": {
+    "src": "./functions"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/focusreactive/GitnationSlackApp/issues"
+  },
+  "homepage": "https://github.com/focusreactive/GitnationSlackApp#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.12.10",
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "@usulpro/package-prepare": "^1.2.1"
+  }
+}
