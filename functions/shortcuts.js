@@ -1,3 +1,4 @@
+import queryString from 'query-string';
 export const handler = async (event, context, callback) => {
   const {
     path,
@@ -5,10 +6,16 @@ export const handler = async (event, context, callback) => {
     headers,
     queryStringParameters,
     isBase64Encoded,
-    body,
   } = event;
-    console.log("🚀 ~ file: shortcuts.js ~ line 10 ~ handler ~ body", body)
-    console.log("🚀 ~ file: shortcuts.js ~ line 10 ~ handler ~ queryStringParameters", queryStringParameters)
-    console.log("🚀 ~ file: shortcuts.js ~ line 10 ~ handler ~ path", path)
-    console.log("🚀 ~ file: shortcuts.js ~ line 10 ~ handler ~ httpMethod", httpMethod)
+  const body = await queryString.parse(event.body);
+  console.log('🚀 ~ file: shortcuts.js ~ line 10 ~ handler ~ body\n', body);
+  console.log(
+    '🚀 ~ file: shortcuts.js ~ line 10 ~ handler ~ queryStringParameters\n',
+    queryStringParameters,
+  );
+  console.log('🚀 ~ file: shortcuts.js ~ line 10 ~ handler ~ path\n', path);
+  console.log(
+    '🚀 ~ file: shortcuts.js ~ line 10 ~ handler ~ httpMethod\n',
+    httpMethod,
+  );
 };

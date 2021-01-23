@@ -25,5 +25,8 @@
     "@babel/core": "^7.12.10",
     "@babel/preset-env": "^7.12.11",
     "@usulpro/package-prepare": "^1.2.1"
+  },
+  "dependencies": {
+    "query-string": "^6.13.8"
   }
 }
