@@ -1,6 +1,11 @@
 # GitnationSlackApp
 Gitnation live conferences deploy
 
+## Endpoints
+
+https://gitnation-slack-app.netlify.app/.netlify/functions/shortcuts
+
+
 ## develop
 
 ```sh
